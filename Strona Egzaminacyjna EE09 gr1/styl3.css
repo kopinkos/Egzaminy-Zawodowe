@@ -1,0 +1,27 @@
+.body{
+    font-family: Tahoma, sans-serif;
+}
+.stopki{
+    background-color: tomato;
+    color: white;
+    display: flex;
+
+}
+.baner{
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    margin: 10px;
+}
+.blok_glowny{
+    text-align: center;
+    background-color: seashell;
+    height: 500px;
+}
+.fo{
+    width: 25%;
+    height: 160px;
+}
+.fo a{
+    color: white;
+}

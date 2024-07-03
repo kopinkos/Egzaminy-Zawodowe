@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sprawdz cene swojej wizyty</h2>
+    <input type="checkbox" name="twarz" value="piling"/>Piling <br/>
+    <input type="checkbox" name="twarz" value="maska"/>Maska <br/>
+    <input type="checkbox" name="twarz" value="masaz twarzy"/>Masaz twarz <br/>
+    <input type="checkbox" name="twarz" value="regulacja brwi"/>Regulacja brwi <br/>
+    <button>Sprawdz cene</button>
+    <div class="wynik"></div>
+    <div class="zabiegi"></div>
+    <script>
+        let div_wyniki = document.querySelector('div.wynik');
+        let btn = document.querySelector('button');
+        let checkboxy = document.querySelectorAll('input[name="twarz"]');
+        let div_zabiegi = document.querySelector('div.zabiegi')
+        btn.addEventListener('click', function(){
+            let suma = 0;
+            let guwno = '';
+            if(checkboxy[0].checked) {
+                suma+=45; 
+                guwno+="piling\n";
+            } 
+            if(checkboxy[1].checked) {
+                suma+=30; 
+                guwno+="maska\n";
+            } 
+            if(checkboxy[2].checked) {
+                suma+=20; 
+                guwno+="masaz twarzy\n";
+            } 
+            if(checkboxy[3].checked) {
+                suma+=5; 
+                guwno+="regulacja brwi\n";
+            } 
+            div_wyniki.textContent = 'cena zabiegow:' + suma;
+            div_zabiegi.textContent = 'Zabiegi ' + guwno ;
+        });
+    </script>
+</body>
+</html>

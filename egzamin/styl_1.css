@@ -1,0 +1,40 @@
+*{
+    font-family: Helvetica;
+}
+
+.baner, footer{
+    background-color: #00838F;
+    color: #fff;
+    padding: 5px;
+    font-size: 130%;
+    text-align: center;
+}
+
+.lewy1, .lewy2{
+    background-color: #EFEFEF;
+    width: 55%;
+}
+
+.lewy1{
+    height: 150px;
+}
+
+.lewy2{
+    height: 300px;
+}
+
+.prawy{
+    background-color: #4FB3BF;
+    width: 45%;
+    height: 450px;
+    text-align: center;
+}
+
+img{
+    box-shadow: 10px 10px 7px dimgray;
+    margin: 20px;
+}
+
+table, td, tr, th{
+    border: solid 1px #4FB3BF;
+}

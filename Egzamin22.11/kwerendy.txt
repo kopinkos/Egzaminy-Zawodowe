@@ -1,0 +1,3 @@
+SELECT * FROM klienci ORDER BY klienci.punkty DESC LIMIT 3;
+
+SELECT typy.nazwa, COUNT(*) AS liczba_klientow FROM typy JOIN klienci ON typy.id = klienci.Typy_id GROUP BY typy.nazwa;

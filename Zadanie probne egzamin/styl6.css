@@ -1,0 +1,47 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lewa{
+width: 30%;
+height: 600px;
+background-color: maroon;
+color: white;
+}
+.prawa{
+width: 70%;
+height: 600px;
+background-color: maroon;
+color: white;
+overflow-y: auto;
+}
+.stopka{
+    width: 100%;
+    background-color: DimGray;
+    color: white;
+}
+
+.prawa > div{
+    display: flex;
+}
+.prawa > p{
+    padding: 10px;
+}
+.prawa img{
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.lewa button:nth-child(3){
+    background-color: indigo;
+}
+
+.lewa button:nth-child(4){
+    background-color: steelblue;
+}
+
+.lewa button:nth-child(5){
+    background-color: olive;
+}
